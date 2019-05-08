@@ -141,6 +141,10 @@ int main(int argc, const char * argv[]) {
   while (!feof(fin1) && fgets(buf, BUFLEN, fin1) != NULL) { strings1[count1++] = strdup(buf); }
   while (!feof(fin2) && fgets(buf, BUFLEN, fin2) != NULL) { strings2[count2++] = strdup(buf); }
 
+  //flags
+  target_flags(argc, argv);
+
+
   para* p = para_first(strings1, count1);
   para* q = para_first(strings2, count2);
   if (para_equal(p, q)) {
