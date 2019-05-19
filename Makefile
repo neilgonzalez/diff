@@ -1,2 +1,2 @@
 differ:
-	clang -o prac prac.c
+	clang -o diff diff.c
